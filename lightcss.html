@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Light Effect</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<style type="text/css">
+	@import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
+	*{
+		margin: 0;
+		padding: 0;
+		font-family: 'Russo One', sans-serif;
+	}
+	html{
+		font-size: 70%;
+	}
+	.main_div{
+		width: 100vw;
+		height: 100vh;
+		background-color: silver;
+		display: grid;
+		place-items:center;
+	}
+	.center_div{
+		width: 50%;
+		height: auto;
+		/*background-color: #fff;*/
+	}
+	.center_div ul{
+		display: flex;
+		justify-content: center;
+	}
+	.center_div ul li{
+		list-style: none;
+		text-transform: uppercase;
+		font-size: 8rem;
+		letter-spacing: 15px;
+		/*color: #576574*/
+		animation: cgiti 1.3s linear infinite;
+	}
+	@keyframes cgiti{
+		0%{
+			color: #f368e0;
+			text-shadow: none;
+		}
+		90%{
+			color: #5f27cd;
+			text-shadow: none;
+		}
+		100%{
+			color: #f368e0;
+			text-shadow: 0 0 1rem orange, 0 0 7rem orange
+		}
+	}
+	.center_div ul li:nth-child(1){
+		animation-delay: 0s;
+	}
+	.center_div ul li:nth-child(2){
+		animation-delay: 0.1s;
+	}
+	.center_div ul li:nth-child(3){
+		animation-delay: 0.2s;
+	}
+	.center_div ul li:nth-child(4){
+		animation-delay: 0.3s;
+	}
+	.center_div ul li:nth-child(5){
+		animation-delay: 0.4s;
+	}
+</style>
+<body>
+<div class="main_div">
+	<div class="center_div">
+		<ul>
+			<li>C</li>
+			<li>G</li>
+			<li>I</li>
+			<li>T</li>
+			<li>I</li>
+		</ul>
+	</div>
+</div>
+</body>
+</html>
